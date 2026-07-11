@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Apex Digital — Crafting meaningful web experiences through thoughtful design and clean code." />
+    <title>Apex Digital | Web Design & Development</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== HEADER / NAVIGATION ===== -->
+    <header class="site-header" role="banner">
+        <nav class="nav container" aria-label="Main navigation">
+            <a href="#home" class="nav__logo" aria-label="Apex Digital home">
+                <span class="nav__logo-mark">A</span>pex Digital
+            </a>
+
+            <ul class="nav__links" role="list">
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#features" class="nav__link">Features</a></li>
+                <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+                <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+            </ul>
+
+            <div class="nav__hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main-content">
+
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" id="home" aria-labelledby="hero-heading">
+            <div class="hero__bg-pattern" aria-hidden="true"></div>
+
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <h1 class="hero__heading" id="hero-heading">
+                        We build digital experiences that leave a
+                        <span class="hero__accent">lasting impression.</span>
+                    </h1>
+                    <p class="hero__sub">
+                        Apex Digital creates fast, accessible, and pixel-perfect websites 
+                        that turn visitors into loyal customers — from the very first line of code.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#portfolio" class="btn btn--primary">See Our Work</a>
+                        <a href="#contact" class="btn btn--ghost">Start a Project</a>
+                    </div>
+                </div>
+
+                <div class="hero__visual" aria-hidden="true">
+                    <div class="hero__card hero__card--back"></div>
+                    <div class="hero__card hero__card--front">
+                        <img
+                            src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&q=80"
+                            alt="Designer working on a wireframe on a large monitor"
+                            width="600"
+                            height="420"
+                            loading="eager"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__stats" aria-label="Studio highlights">
+                <div class="container hero__stats-inner">
+                    <div class="stat">
+                        <strong class="stat__number">120+</strong>
+                        <span class="stat__label">Projects Delivered</span>
+                    </div>
+                    <div class="stat">
+                        <strong class="stat__number">98%</strong>
+                        <span class="stat__label">Client Satisfaction</span>
+                    </div>
+                    <div class="stat">
+                        <strong class="stat__number">5 yrs</strong>
+                        <span class="stat__label">Industry Experience</span>
+                    </div>
+                    <div class="stat">
+                        <strong class="stat__number">4.9★</strong>
+                        <span class="stat__label">Average Rating</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT SECTION ===== -->
+        <section class="about section" id="about" aria-labelledby="about-heading">
+            <div class="container about__inner">
+                <div class="about__media">
+                    <img
+                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=680&q=80"
+                        alt="Cross-functional team collaborating around a whiteboard"
+                        width="680"
+                        height="520"
+                        loading="lazy"
+                        class="about__img"
+                    />
+                    <div class="about__badge" aria-hidden="true">
+                        <span class="about__badge-number">8+</span>
+                        <span class="about__badge-text">Years of Excellence</span>
+                    </div>
+                </div>
+
+                <div class="about__copy">
+                    <p class="section__eyebrow">Who We Are</p>
+                    <h2 class="section__heading" id="about-heading">
+                        Structure first. Design follows.
+                    </h2>
+                    <p class="about__lead">
+                        Apex Digital is a boutique web studio founded on a simple belief: 
+                        great websites are built on solid foundations. We prioritize information 
+                        architecture and semantic structure before diving into visual design.
+                    </p>
+                    <p class="about__body">
+                        Over the past five years, we've shipped more than 120 production websites 
+                        for clients in e-commerce, SaaS, and creative industries. Every project 
+                        undergoes our rigorous quality assurance process, ensuring W3C validation, 
+                        semantic correctness, and a Lighthouse score of 90 or above.
+                    </p>
+
+                    <ul class="about__pillars" role="list">
+                        <li class="pillar">
+                            <span class="pillar__icon" aria-hidden="true">◆</span>
+                            <div>
+                                <strong class="pillar__title">Clean HTML</strong>
+                                <span class="pillar__desc">Semantic, accessible, and machine-readable markup.</span>
+                            </div>
+                        </li>
+                        <li class="pillar">
+                            <span class="pillar__icon" aria-hidden="true">◆</span>
+                            <div>
+                                <strong class="pillar__title">Modular CSS</strong>
+                                <span class="pillar__desc">Reusable, maintainable, and DRY stylesheets.</span>
+                            </div>
+                        </li>
+                        <li class="pillar">
+                            <span class="pillar__icon" aria-hidden="true">◆</span>
+                            <div>
+                                <strong class="pillar__title">Accessibility</strong>
+                                <span class="pillar__desc">WCAG AA compliant with keyboard navigation.</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="#services" class="btn btn--primary">Explore Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SERVICES SECTION ===== -->
+        <section class="services section section--alt" id="services" aria-labelledby="services-heading">
+            <div class="container">
+                <header class="section__header">
+                    <p class="section__eyebrow">What We Offer</p>
+                    <h2 class="section__heading" id="services-heading">Services for the modern web</h2>
+                    <p class="section__sub">
+                        Every engagement begins with strategy and architecture, 
+                        followed by precise, clean, and maintainable code.
+                    </p>
+                </header>
+
+                <div class="services__grid">
+                    <article class="service-card" aria-labelledby="svc-1">
+                        <div class="service-card__icon" aria-hidden="true">01</div>
+                        <h3 class="service-card__title" id="svc-1">UI/UX Design</h3>
+                        <p class="service-card__desc">
+                            From wireframes to pixel-perfect mockups, we create design systems 
+                            that are both beautiful and developer-friendly.
+                        </p>
+                        <a href="#contact" class="service-card__link">Learn More →</a>
+                    </article>
+
+                    <article class="service-card" aria-labelledby="svc-2">
+                        <div class="service-card__icon" aria-hidden="true">02</div>
+                        <h3 class="service-card__title" id="svc-2">Front-End Development</h3>
+                        <p class="service-card__desc">
+                            Semantic HTML5, modern CSS (Flexbox & Grid), and lightweight 
+                            static pages that load in under a second.
+                        </p>
+                        <a href="#contact" class="service-card__link">Learn More →</a>
+                    </article>
+
+                    <article class="service-card" aria-labelledby="svc-3">
+                        <div class="service-card__icon" aria-hidden="true">03</div>
+                        <h3 class="service-card__title" id="svc-3">Responsive Design</h3>
+                        <p class="service-card__desc">
+                            Mobile-first approach with fluid typography and touch-friendly 
+                            interfaces that work on every screen size.
+                        </p>
+                        <a href="#contact" class="service-card__link">Learn More →</a>
+                    </article>
+
+                    <article class="service-card" aria-labelledby="svc-4">
+                        <div class="service-card__icon" aria-hidden="true">04</div>
+                        <h3 class="service-card__title" id="svc-4">Accessibility Audits</h3>
+                        <p class="service-card__desc">
+                            Comprehensive WCAG AA reviews with detailed remediation plans 
+                            and implementation support.
+                        </p>
+                        <a href="#contact" class="service-card__link">Learn More →</a>
+                    </article>
+
+                    <article class="service-card" aria-labelledby="svc-5">
+                        <div class="service-card__icon" aria-hidden="true">05</div>
+                        <h3 class="service-card__title" id="svc-5">Performance Tuning</h3>
+                        <p class="service-card__desc">
+                            Image optimization, CSS critical path analysis, and Lighthouse 
+                            score improvements to 90+ across all metrics.
+                        </p>
+                        <a href="#contact" class="service-card__link">Learn More →</a>
+                    </article>
+
+                    <article class="service-card" aria-labelledby="svc-6">
+                        <div class="service-card__icon" aria-hidden="true">06</div>
+                        <h3 class="service-card__title" id="svc-6">Design Systems</h3>
+                        <p class="service-card__desc">
+                            BEM-based component libraries with CSS custom properties that 
+                            scale seamlessly across multiple projects.
+                        </p>
+                        <a href="#contact" class="service-card__link">Learn More →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FEATURES SECTION ===== -->
+        <section class="features section" id="features" aria-labelledby="features-heading">
+            <div class="container features__inner">
+                <div class="features__copy">
+                    <p class="section__eyebrow">Why Choose Us</p>
+                    <h2 class="section__heading" id="features-heading">
+                        Quality isn't optional — it's our standard.
+                    </h2>
+                    <p class="features__sub">
+                        Every project must pass our three-stage quality checkpoint: 
+                        W3C validation, semantic audit, and visual regression testing.
+                    </p>
+
+                    <dl class="features__list">
+                        <div class="feature-item">
+                            <dt class="feature-item__title">
+                                <span class="feature-item__check" aria-hidden="true">✓</span>
+                                Zero Validation Errors
+                            </dt>
+                            <dd class="feature-item__desc">
+                                Every HTML file is validated before delivery. No missing 
+                                attributes, no deprecated elements, no syntax errors.
+                            </dd>
+                        </div>
+                        <div class="feature-item">
+                            <dt class="feature-item__title">
+                                <span class="feature-item__check" aria-hidden="true">✓</span>
+                                Semantic Structure
+                            </dt>
+                            <dd class="feature-item__desc">
+                                Proper use of header, main, nav, and section landmarks. 
+                                One H1 per page, no unnecessary div wrappers.
+                            </dd>
+                        </div>
+                        <div class="feature-item">
+                            <dt class="feature-item__title">
+                                <span class="feature-item__check" aria-hidden="true">✓</span>
+                                Lighthouse Score 90+
+                            </dt>
+                            <dd class="feature-item__desc">
+                                Performance, Accessibility, Best Practices, and SEO — 
+                                we hit 90+ in all four categories.
+                            </dd>
+                        </div>
+                        <div class="feature-item">
+                            <dt class="feature-item__title">
+                                <span class="feature-item__check" aria-hidden="true">✓</span>
+                                Pixel-Perfect Execution
+                            </dt>
+                            <dd class="feature-item__desc">
+                                Visual regression testing ensures the final build matches 
+                                the approved design down to the last pixel.
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="features__visual" aria-hidden="true">
+                    <div class="features__browser">
+                        <div class="features__browser-bar">
+                            <span class="dot dot--red"></span>
+                            <span class="dot dot--yellow"></span>
+                            <span class="dot dot--green"></span>
+                            <span class="features__url">apexdigital.io</span>
+                        </div>
+                        <img
+                            src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=620&q=80"
+                            alt="Clean web interface displayed on a laptop"
+                            width="620"
+                            height="420"
+                            loading="lazy"
+                            class="features__screenshot"
+                        />
+                    </div>
+                    <div class="features__score-badge">
+                        <span class="features__score-number">98</span>
+                        <span class="features__score-label">Lighthouse</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PORTFOLIO SECTION ===== -->
+        <section class="portfolio section section--alt" id="portfolio" aria-labelledby="portfolio-heading">
+            <div class="container">
+                <header class="section__header">
+                    <p class="section__eyebrow">Our Portfolio</p>
+                    <h2 class="section__heading" id="portfolio-heading">Featured projects</h2>
+                    <p class="section__sub">
+                        A selection of our recent work — each one passed our full 
+                        quality assurance process before going live.
+                    </p>
+                </header>
+
+                <div class="portfolio__grid">
+                    <article class="portfolio-card portfolio-card--wide" aria-labelledby="proj-1">
+                        <div class="portfolio-card__img-wrap">
+                            <img
+                                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80"
+                                alt="E-commerce website displayed on a MacBook Pro"
+                                width="800"
+                                height="500"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="portfolio-card__info">
+                            <span class="portfolio-card__tag">E-Commerce</span>
+                            <h3 class="portfolio-card__title" id="proj-1">Aura Shop</h3>
+                            <p class="portfolio-card__desc">
+                                A fully responsive storefront with CSS Grid layout, 
+                                optimized images, and a Lighthouse score of 97.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" aria-labelledby="proj-2">
+                        <div class="portfolio-card__img-wrap">
+                            <img
+                                src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&q=80"
+                                alt="SaaS dashboard interface on a desktop monitor"
+                                width="600"
+                                height="400"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="portfolio-card__info">
+                            <span class="portfolio-card__tag">SaaS</span>
+                            <h3 class="portfolio-card__title" id="proj-2">InsightHub</h3>
+                            <p class="portfolio-card__desc">
+                                An analytics dashboard with semantic tables and 
+                                high-contrast, accessible color schemes.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" aria-labelledby="proj-3">
+                        <div class="portfolio-card__img-wrap">
+                            <img
+                                src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600&q=80"
+                                alt="Creative agency portfolio on a tablet"
+                                width="600"
+                                height="400"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="portfolio-card__info">
+                            <span class="portfolio-card__tag">Creative</span>
+                            <h3 class="portfolio-card__title" id="proj-3">Nova Studio</h3>
+                            <p class="portfolio-card__desc">
+                                An asymmetric portfolio layout using CSS custom 
+                                properties and a cohesive design system.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" aria-labelledby="proj-4">
+                        <div class="portfolio-card__img-wrap">
+                            <img
+                                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80"
+                                alt="Analytics application on multiple devices"
+                                width="600"
+                                height="400"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="portfolio-card__info">
+                            <span class="portfolio-card__tag">Analytics</span>
+                            <h3 class="portfolio-card__title" id="proj-4">DataFlow</h3>
+                            <p class="portfolio-card__desc">
+                                A data-dense dashboard using CSS Grid subgrid, 
+                                with zero JavaScript dependencies.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card" aria-labelledby="proj-5">
+                        <div class="portfolio-card__img-wrap">
+                            <img
+                                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+                                alt="Financial tech landing page on a laptop"
+                                width="600"
+                                height="400"
+                                loading="lazy"
+                            />
+                        </div>
+                        <div class="portfolio-card__info">
+                            <span class="portfolio-card__tag">FinTech</span>
+                            <h3 class="portfolio-card__title" id="proj-5">ClearFinance</h3>
+                            <p class="portfolio-card__desc">
+                                A trust-focused landing page with semantic tables, 
+                                high contrast, and a zero-cookie static approach.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TESTIMONIALS SECTION ===== -->
+        <section class="testimonials section" id="testimonials" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <header class="section__header">
+                    <p class="section__eyebrow">Client Testimonials</p>
+                    <h2 class="section__heading" id="testimonials-heading">What our clients say</h2>
+                </header>
+
+                <div class="testimonials__grid">
+                    <article class="testimonial-card" aria-labelledby="test-1-name">
+                        <blockquote class="testimonial-card__quote">
+                            "Apex Digital delivered a flawless static website that scored 
+                            99 on Lighthouse. The code quality is outstanding."
+                        </blockquote>
+                        <footer class="testimonial-card__footer">
+                            <img
+                                src="https://i.pravatar.cc/80?img=11"
+                                alt="Portrait of Priya Sharma"
+                                width="80"
+                                height="80"
+                                loading="lazy"
+                                class="testimonial-card__avatar"
+                            />
+                            <div>
+                                <strong class="testimonial-card__name" id="test-1-name">Priya Sharma</strong>
+                                <span class="testimonial-card__role">CTO, Aura Commerce</span>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <article class="testimonial-card testimonial-card--accent" aria-labelledby="test-2-name">
+                        <blockquote class="testimonial-card__quote">
+                            "Their understanding of semantic HTML is exceptional. Our 
+                            accessibility score jumped from 64 to 97 in one sprint."
+                        </blockquote>
+                        <footer class="testimonial-card__footer">
+                            <img
+                                src="https://i.pravatar.cc/80?img=32"
+                                alt="Portrait of Marcus Webb"
+                                width="80"
+                                height="80"
+                                loading="lazy"
+                                class="testimonial-card__avatar"
+                            />
+                            <div>
+                                <strong class="testimonial-card__name" id="test-2-name">Marcus Webb</strong>
+                                <span class="testimonial-card__role">Lead Engineer, InsightHub</span>
+                            </div>
+                        </footer>
+                    </article>
+
+                    <article class="testimonial-card" aria-labelledby="test-3-name">
+                        <blockquote class="testimonial-card__quote">
+                            "The team delivered pixel-perfect work two weeks ahead of 
+                            schedule. QA was seamless and stress-free."
+                        </blockquote>
+                        <footer class="testimonial-card__footer">
+                            <img
+                                src="https://i.pravatar.cc/80?img=47"
+                                alt="Portrait of Sofia Delacroix"
+                                width="80"
+                                height="80"
+                                loading="lazy"
+                                class="testimonial-card__avatar"
+                            />
+                            <div>
+                                <strong class="testimonial-card__name" id="test-3-name">Sofia Delacroix</strong>
+                                <span class="testimonial-card__role">Product Manager, Nova Studio</span>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT SECTION ===== -->
+        <section class="contact section section--alt" id="contact" aria-labelledby="contact-heading">
+            <div class="container contact__inner">
+                <div class="contact__copy">
+                    <p class="section__eyebrow">Get In Touch</p>
+                    <h2 class="section__heading" id="contact-heading">
+                        Let's build something remarkable.
+                    </h2>
+                    <p class="contact__body">
+                        Share your project details with us. We'll review your requirements 
+                        and respond within one business day with our initial thoughts.
+                    </p>
+
+                    <address class="contact__details">
+                        <div class="contact-info">
+                            <span class="contact-info__label">Email</span>
+                            <a href="mailto:hello@apexdigital.io" class="contact-info__value">hello@apexdigital.io</a>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-info__label">Phone</span>
+                            <a href="tel:+929684233210" class="contact-info__value">+92 968 4233210</a>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-info__label">Location</span>
+                            <span class="contact-info__value">Islamabad, pakistan</span>
+                        </div>
+                    </address>
+                </div>
+
+                <div class="contact__form-wrap">
+                    <div class="contact-form" role="region" aria-label="Contact form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Full Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    class="form-input"
+                                    placeholder="Arjun Kapoor"
+                                    autocomplete="name"
+                                    required
+                                    aria-required="true"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email Address</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-input"
+                                    placeholder="arjun@example.com"
+                                    autocomplete="email"
+                                    required
+                                    aria-required="true"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject</label>
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                class="form-input"
+                                placeholder="Project enquiry — Static Website"
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                class="form-input form-input--textarea"
+                                placeholder="Tell us about your project, timeline, and goals…"
+                                rows="5"
+                                required
+                                aria-required="true"
+                            ></textarea>
+                        </div>
+
+                        <button type="button" class="btn btn--primary btn--full">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container site-footer__inner">
+            <div class="footer-brand">
+                <a href="#home" class="footer-brand__logo" aria-label="Apex Digital home">
+                    <span class="nav__logo-mark">A</span>pex Digital
+                </a>
+                <p class="footer-brand__tagline">
+                    Structure first.<br />Design follows.
+                </p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <h3 class="footer-nav__heading">Navigate</h3>
+                <ul class="footer-nav__list" role="list">
+                    <li><a href="#about" class="footer-nav__link">About</a></li>
+                    <li><a href="#services" class="footer-nav__link">Services</a></li>
+                    <li><a href="#features" class="footer-nav__link">Features</a></li>
+                    <li><a href="#portfolio" class="footer-nav__link">Portfolio</a></li>
+                    <li><a href="#testimonials" class="footer-nav__link">Testimonials</a></li>
+                    <li><a href="#contact" class="footer-nav__link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-services">
+                <h3 class="footer-nav__heading">Services</h3>
+                <ul class="footer-nav__list" role="list">
+                    <li><span class="footer-nav__link">UI/UX Design</span></li>
+                    <li><span class="footer-nav__link">Front-End Development</span></li>
+                    <li><span class="footer-nav__link">Responsive Design</span></li>
+                    <li><span class="footer-nav__link">Accessibility Audits</span></li>
+                    <li><span class="footer-nav__link">Performance Tuning</span></li>
+                    <li><span class="footer-nav__link">Design Systems</span></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3 class="footer-nav__heading">Contact</h3>
+                <address class="footer-contact__details">
+                    <a href="mailto:hello@apexdigital.io" class="footer-nav__link">hello@apexdigital.io</a>
+                    <a href="tel:+929654233210" class="footer-nav__link">+92 965 4233210</a>
+                    <span class="footer-nav__link">Islamabad, pakistan</span>
+                </address>
+            </div>
+        </div>
+
+        <div class="site-footer__bottom">
+            <div class="container site-footer__bottom-inner">
+                <p class="site-footer__copy">
+                    © 2026 Apex Digital.                 
+                </p>
+                <p class="site-footer__legal">
+                    <a href="#" class="footer-nav__link">Privacy Policy</a>
+                    <a href="#" class="footer-nav__link">Terms of Use</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
